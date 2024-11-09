@@ -1,0 +1,81 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  min-height: 100dvh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #110f0f;
+  color: #fff;
+}
+
+main.container {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.bin-tool {
+  width: 45%;
+  background-color: #201c1c;
+  padding: 2rem 4rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.26);
+
+  & button {
+    width: 220px;
+    padding: .8rem;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.8em;
+    background-color: #110f0f;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in;
+  }
+  & button:hover {
+    background-color: #1a1919;
+  }
+}
+
+section.inputs {
+  width: 100%;
+  margin-block: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & div.input-container {
+    display: flex;
+    flex-direction: column;
+
+    & label {
+      font-size: 1.2em;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    & input[type="text"] {
+      outline: none;
+      border: none;
+      padding: 0 0 .3rem 0;
+      font-size: 0.8em;
+      font-family: monospace;
+      background-color: transparent;
+      border-bottom: 1px solid #473f3f;
+      color: #fff;
+    }
+  }
+
+}

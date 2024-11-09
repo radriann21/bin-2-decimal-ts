@@ -1,13 +1,35 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css">
+  <title>Bin2Decimal</title>
+</head>
+
+<body>
+  <main class="container">
+    <section class="bin-tool">
+      <h1>Bin2Decimal</h1>
+
+      <section class="inputs">
+        <div class="input-container">
+          <label>Binary</label>
+          <input id="binary" type="text" placeholder="Put your binary number...">
+        </div>
+        <div class="input-container">
+          <label>Decimal</label>
+          <span id="result">2023</span>
+        </div>
+      </section>
+
+      <button id="transform">Transform</button>
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
